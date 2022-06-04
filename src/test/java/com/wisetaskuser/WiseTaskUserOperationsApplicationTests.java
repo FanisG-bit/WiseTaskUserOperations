@@ -20,6 +20,12 @@ import com.wisetaskuser.entities.Tasks;
 import com.wisetaskuser.entities.User;
 import com.wisetaskuser.entities.UserType;
 
+/**
+ * A test class responsible for testing several methods that are being
+ * provided in the users REST API.
+ * @author Theofanis Gkoufas
+ *
+ */
 @WebMvcTest(controllers = UserOperationsController.class)
 class WiseTaskUserOperationsApplicationTests {
 

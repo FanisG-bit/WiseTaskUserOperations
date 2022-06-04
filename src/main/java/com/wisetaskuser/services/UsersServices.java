@@ -17,6 +17,12 @@ import com.wisetaskuser.entities.User;
 import com.wisetaskuser.repositories.UsersRepository;
 import lombok.NoArgsConstructor;
 
+/**
+ * A service class that is being used by the users rest controller and performs
+ * all the respective interactions with the database.
+ * @author Theofanis Gkoufas
+ *
+ */
 @Service
 @NoArgsConstructor
 public class UsersServices {
@@ -122,6 +128,13 @@ public class UsersServices {
 		return tasks;
 	}
 	
+	/**
+	 * Retrieves a list of all the email addresses that belong to lecturers that are given
+	 * as the "primaryLecturers" list argument.
+	 * @param primaryLecturers The list of lecturers whose emails we want to retrieve.
+	 * @param conn An open database connection established by a dataSource.
+	 * @return A list of email addresses.
+	 */
 	private List<String> getEmailAddressesBasedOnNames(List<String> primaryLecturers, Connection conn) {
 		PreparedStatement preparedStatement;
 		String sql;

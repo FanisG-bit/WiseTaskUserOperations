@@ -26,6 +26,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+/**
+ * An entity class representing Task.
+ * @author Theofanis Gkoufas
+ *
+ */
 @Component
 @Scope("prototype")
 @Entity
